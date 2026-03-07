@@ -1,6 +1,7 @@
 # Claim extraction from backstory text
 import re
 import hashlib
+import uuid
 from typing import List, Dict, Any, Optional
 from sentence_transformers import SentenceTransformer
 
@@ -50,7 +51,7 @@ class ClaimExtractor:
         ]
     
     def extract_claims(self, backstory_id: int, backstory_text: str,
-                       character: str, use_gemini: bool = True) -> List[Claim]:
+                           character: str, use_gemini: bool = True) -> List[Claim]:
         # Extract claims using Gemini or rule-based fallback
         claims = []
         
@@ -89,7 +90,7 @@ class ClaimExtractor:
         # Process Gemini output into Claim object
         text = raw.get('text', '')
         
-        claim_id = self._generate_claim_id(backstory_id, index, text)
+        claim_id = str(uuid.uuid4())
         
         category_str = raw.get('category', 'formative_experiences')
         try:
@@ -136,7 +137,7 @@ class ClaimExtractor:
             if len(sentence.strip()) < 10:
                 continue
             
-            claim_id = self._generate_claim_id(backstory_id, i, sentence)
+            claim_id = str(uuid.uuid4())
             category = self._infer_category(sentence)
             importance = self._infer_importance(sentence)
             keywords = self._extract_keywords(sentence)
@@ -172,11 +173,6 @@ class ClaimExtractor:
                      for s in sentences]
         
         return [s.strip() for s in sentences if s.strip()]
-    
-    def _generate_claim_id(self, backstory_id: int, index: int, text: str) -> str:
-        hash_input = f"{backstory_id}_{index}_{text[:50]}"
-        hash_val = hashlib.md5(hash_input.encode()).hexdigest()[:8]
-        return f"claim_{backstory_id}_{index}_{hash_val}"
     
     def _infer_category(self, text: str) -> ClaimCategory:
         # Infer claim category from keywords
