@@ -195,51 +195,7 @@ A **constraint-based reasoning pipeline** that:
 
 ---
 
-## 📊 Current Status
-
-### ✅ Implemented
-- [x] Novel ingestion and hierarchical chunking
-- [x] Claim extraction (LLM-assisted + rule-based fallback)
-- [x] Semantic + keyword evidence retrieval
-- [x] Timeline-aware indexing (early/mid/late)
-- [x] Rule-based constraint reasoning engine
-- [x] Deterministic classification logic
-- [x] CSV output generation with rationales
-- [x] Pathway document store integration
-
-### 🎯 Planned Enhancements
-- [ ] Multi-novel batch processing optimization
-- [ ] Interactive web interface for single-backstory validation
-- [ ] Confidence calibration across different novel genres
-- [ ] Extended claim category taxonomy
-- [ ] Cross-reference chain detection
-
----
-
-## 🚀 MVP Roadmap
-
-### Phase 1: Core Pipeline ✅
-- [x] Document ingestion and chunking
-- [x] Basic claim extraction
-- [x] Evidence retrieval with semantic search
-- [x] Rule-based classification
-
-### Phase 2: Reasoning Enhancement ✅
-- [x] Timeline-aware retrieval
-- [x] Constraint pattern library
-- [x] Importance-weighted classification
-- [x] Deterministic rationale generation
-
-### Phase 3: Production Readiness 🔄
-- [x] CSV output format
-- [x] Batch processing support
-- [ ] Performance optimization
-- [ ] Extended test coverage
-- [ ] Deployment documentation
-
----
-
-## 🚀 Quick Start
+## � Quick Startt
 
 ### Prerequisites
 ```bash
