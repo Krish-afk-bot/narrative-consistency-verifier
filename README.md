@@ -195,7 +195,8 @@ A **constraint-based reasoning pipeline** that:
 
 ---
 
-## � Quick Startt
+
+## 🚀 Quick Start
 
 ### Prerequisites
 ```bash
