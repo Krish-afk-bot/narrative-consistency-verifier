@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📚 Narrative Consistency Validator
+#  Narrative Consistency Validator
 
 **Verify character backstories against long-form literary narratives using constraint-based reasoning**
 
@@ -15,13 +15,13 @@
 
 ---
 
-## 🎯 Mission
+##  Mission
 
 Determine whether a proposed character backstory is logically consistent with events, relationships, and character development in a 100,000+ word novel—without reading the entire book manually.
 
 ---
 
-## 🔍 The Challenge
+##  The Challenge
 
 Literary narratives establish complex constraints across hundreds of pages:
 
@@ -39,7 +39,7 @@ Literary narratives establish complex constraints across hundreds of pages:
 
 ---
 
-## 💡 Our Solution
+##  Our Solution
 
 A **constraint-based reasoning pipeline** that:
 
@@ -52,20 +52,20 @@ A **constraint-based reasoning pipeline** that:
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
 | Feature | Description |
 |---------|-------------|
-| 🧩 **Claim Decomposition** | Breaks backstories into atomic claims with categories (beliefs, events, relationships) and importance levels (core, significant, surface) |
-| 🔎 **Long-Context Retrieval** | Handles 100k+ word novels through hierarchical chunking with overlap and timeline-aware indexing |
-| ⚖️ **Constraint Reasoning** | Detects contradictions, support, and causal inconsistencies using pattern matching and temporal logic |
-| 🎯 **Deterministic Classification** | Rule-based decisions ensure reproducibility—same input always produces same output |
-| 📊 **Pathway Integration** | Uses Pathway for document ingestion, indexing, and retrieval orchestration |
-| 🔬 **Explainable Outputs** | Every prediction includes a human-readable rationale derived from decision logic |
+|  **Claim Decomposition** | Breaks backstories into atomic claims with categories (beliefs, events, relationships) and importance levels (core, significant, surface) |
+|  **Long-Context Retrieval** | Handles 100k+ word novels through hierarchical chunking with overlap and timeline-aware indexing |
+|  **Constraint Reasoning** | Detects contradictions, support, and causal inconsistencies using pattern matching and temporal logic |
+|  **Deterministic Classification** | Rule-based decisions ensure reproducibility—same input always produces same output |
+|  **Pathway Integration** | Uses Pathway for document ingestion, indexing, and retrieval orchestration |
+|  **Explainable Outputs** | Every prediction includes a human-readable rationale derived from decision logic |
 
 ---
 
-## 🔄 How It Works
+##  How It Works
 
 ```
 ┌─────────────┐
@@ -100,7 +100,7 @@ A **constraint-based reasoning pipeline** that:
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -155,7 +155,7 @@ A **constraint-based reasoning pipeline** that:
 
 ---
 
-## 👤 User Journey
+##  User Journey
 
 | Step | Action | System Response |
 |------|--------|-----------------|
@@ -170,7 +170,7 @@ A **constraint-based reasoning pipeline** that:
 
 ---
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 ### Core Framework
 - **Python 3.8+** — Primary language
@@ -196,7 +196,7 @@ A **constraint-based reasoning pipeline** that:
 ---
 
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 ```bash
@@ -277,7 +277,7 @@ story_id,prediction,rationale
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 narrative-consistency-validator/
@@ -311,7 +311,7 @@ narrative-consistency-validator/
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 We welcome contributions! Here's how to get started:
 
@@ -332,13 +332,13 @@ We welcome contributions! Here's how to get started:
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **Kharagpur Data Science Hackathon 2026** — Track A: Systems Reasoning with NLP and Generative AI
 - **Pathway** — Document processing framework
@@ -347,7 +347,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 📞 Contact
+##  Contact
 
 For questions, issues, or collaboration opportunities:
 
